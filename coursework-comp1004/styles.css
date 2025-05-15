@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    flex: 1;
+    padding: 10px;
+}
+
+header {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color:azure;
+    padding: 8px 16px;
+}
+
+.nav-links li a:hover {
+    background-color: #9bebeb;
+    border-radius: 4px;
+}
+
+main {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+footer {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: #64899e;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    #container{
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        order: 2;
+    }
+    .sidebar, footer {
+        width: 100%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #213e46;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #aec44f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cff138;
+
+}
+
+#results {
+    margin-top: 20px;
+
+}
+
+.result-item {
+    padding: 12px;
+    border: 1px solid #0d4c55;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #fff;
+}
+
+#message,
+#message-owner,
+#message-vehicle {
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 4px;
+}
+
+#message.success,
+#message-owner.success,
+#message-vehicle.success {
+    background-color: #b7dbb4;
+    border: 1px solid #abf8bc;
+    color: #045517;
+}
+
+#message.error,
+#message-owner.error,
+#message-vehicle.error {
+    background-color: #f8b9bf;
+    border: 1px solid #be8a90;
+    color: #8b0e1b;
+}
+

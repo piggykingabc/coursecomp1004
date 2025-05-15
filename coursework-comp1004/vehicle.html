@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">People search</a></li>
+                <li><a href="vehicle.html">Vehicle search</a></li>
+                <li><a href="add-vehicle.html">Add a vehicle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="container">
+        <h1>Vehicle Search</h1>
+        <form id="vehicleSearchForm">
+            <label for="rego">Registration Number:</label>
+            <input type="text" id="rego" placeholder="Enter registration number">
+            <button type="submit">Submit</button>
+
+        </form>
+        <div id="message"></div>
+        <div id="results"></div>
+    </main>
+
+    <aside class="sidebar">
+        <img src="vehicle.jpg" alt="Car illustration">
+
+    </aside>
+
+    <footer>
+        <p>COMP1004 Coursework © 2024</p>
+    </footer>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
